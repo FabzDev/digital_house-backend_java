@@ -1,5 +1,14 @@
 public class Perro extends Animal {
-    public void makeSound(){
-        System.out.println("guau! guau!");
+
+
+    @Override
+    public void makeSound() {
+        System.out.println("WOOF! WOOF!");
     }
+
+    public void fetchBall(){
+        makeSound();
+        System.out.println("Atrapando la pelota");
+    }
+
 }
