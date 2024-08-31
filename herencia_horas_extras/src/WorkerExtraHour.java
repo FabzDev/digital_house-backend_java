@@ -7,7 +7,6 @@ public class WorkerExtraHour extends Worker{
         super(name,salary);
         this.extraHoursWorked = hours;
         this.pricePerHour=pricePerHour;
-
     }
 
     @Override
