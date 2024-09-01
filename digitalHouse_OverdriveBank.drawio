@@ -1,0 +1,87 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36" version="24.7.8">
+  <diagram name="Página-1" id="i_aoIqpGy7T48csfo6Qb">
+    <mxGraphModel dx="1877" dy="522" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="DIeX9F-dwLi7lsC7NOMQ-10" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="90" y="40" width="200" height="178" as="geometry" />
+        </mxCell>
+        <mxCell id="DIeX9F-dwLi7lsC7NOMQ-5" value="&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;BankAccount&lt;/span&gt;&lt;br&gt;&lt;/div&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="DIeX9F-dwLi7lsC7NOMQ-10">
+          <mxGeometry y="30" width="200" height="148" as="geometry" />
+        </mxCell>
+        <mxCell id="DIeX9F-dwLi7lsC7NOMQ-6" value="&lt;div&gt;- accountOwner: String&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;- balance: Double" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="DIeX9F-dwLi7lsC7NOMQ-5">
+          <mxGeometry y="26" width="200" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="DIeX9F-dwLi7lsC7NOMQ-7" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="DIeX9F-dwLi7lsC7NOMQ-5">
+          <mxGeometry y="80" width="200" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="DIeX9F-dwLi7lsC7NOMQ-8" value="+ deposite(Double): void&lt;div&gt;&lt;br&gt;&lt;div&gt;+ withdraw(Double): void&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="DIeX9F-dwLi7lsC7NOMQ-5">
+          <mxGeometry y="88" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="DIeX9F-dwLi7lsC7NOMQ-9" value="&amp;lt;&amp;lt;abstract&amp;gt;&amp;gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="DIeX9F-dwLi7lsC7NOMQ-10">
+          <mxGeometry width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="DIeX9F-dwLi7lsC7NOMQ-11" value="&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;BankAccountOverdraft&lt;/span&gt;&lt;br&gt;&lt;/div&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-110" y="310" width="200" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="DIeX9F-dwLi7lsC7NOMQ-12" value="&lt;div&gt;- overdraftAmount: Double&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="DIeX9F-dwLi7lsC7NOMQ-11">
+          <mxGeometry y="26" width="200" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="DIeX9F-dwLi7lsC7NOMQ-13" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="DIeX9F-dwLi7lsC7NOMQ-11">
+          <mxGeometry y="60" width="200" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="DIeX9F-dwLi7lsC7NOMQ-14" value="&lt;div&gt;&lt;div&gt;+ withdraw(Double): void&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="DIeX9F-dwLi7lsC7NOMQ-11">
+          <mxGeometry y="68" width="200" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="DIeX9F-dwLi7lsC7NOMQ-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="DIeX9F-dwLi7lsC7NOMQ-15" target="DIeX9F-dwLi7lsC7NOMQ-8">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="360" y="180" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="390" y="260" />
+              <mxPoint x="190" y="260" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DIeX9F-dwLi7lsC7NOMQ-15" value="&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;BankAccountCommision&lt;/span&gt;&lt;br&gt;&lt;/div&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="290" y="310" width="200" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="DIeX9F-dwLi7lsC7NOMQ-16" value="&lt;div&gt;- commision: Double&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="DIeX9F-dwLi7lsC7NOMQ-15">
+          <mxGeometry y="26" width="200" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="DIeX9F-dwLi7lsC7NOMQ-17" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="DIeX9F-dwLi7lsC7NOMQ-15">
+          <mxGeometry y="60" width="200" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="DIeX9F-dwLi7lsC7NOMQ-18" value="&lt;div&gt;&lt;div&gt;+ deposit(Check): void&lt;br&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ withdraw(Double): void&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="DIeX9F-dwLi7lsC7NOMQ-15">
+          <mxGeometry y="68" width="200" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="DIeX9F-dwLi7lsC7NOMQ-19" value="&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Check&lt;/span&gt;&lt;br&gt;&lt;/div&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="600" y="310" width="200" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="DIeX9F-dwLi7lsC7NOMQ-20" value="&lt;div&gt;- checkOwner: String&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;- amount: Double&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="DIeX9F-dwLi7lsC7NOMQ-19">
+          <mxGeometry y="26" width="200" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="DIeX9F-dwLi7lsC7NOMQ-21" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="DIeX9F-dwLi7lsC7NOMQ-19">
+          <mxGeometry y="90" width="200" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="DIeX9F-dwLi7lsC7NOMQ-22" value="&lt;div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="DIeX9F-dwLi7lsC7NOMQ-19">
+          <mxGeometry y="98" width="200" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="DIeX9F-dwLi7lsC7NOMQ-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;" edge="1" parent="1" target="DIeX9F-dwLi7lsC7NOMQ-20">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="493" y="368" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DIeX9F-dwLi7lsC7NOMQ-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="DIeX9F-dwLi7lsC7NOMQ-11" target="DIeX9F-dwLi7lsC7NOMQ-8">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="160" y="250" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-10" y="260" />
+              <mxPoint x="190" y="260" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
