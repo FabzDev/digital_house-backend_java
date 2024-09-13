@@ -5,7 +5,7 @@ public class Main {
         universidad.matriculateNewStudent(1, "Fabio Escobar");
         universidad.registerNewCourse(10001, "Java Backend");
 
-        universidad.registerStudentToCourse(1,10001);
+        universidad.registerStudentToCourse(1,100001);
 
     }
 }

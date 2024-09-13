@@ -36,34 +36,34 @@ public class University {
             System.out.println("Se ha registrado al estudiante " + studentFound.getName() + " al curso: " + courseFound.getName());
 
         } catch (StudentNotFoundException e){
-            System.out.println("El estudiante ingresado no existe\n");
+            System.out.println("\nEl estudiante que desea registar al curso no existe \n");
             e.printStackTrace();
-        }catch (CourseNotFoundException e){System.out.println("El estudiante no existe\n");
-            System.out.println("El curso ingresado no existe\n");
+        }catch (CourseNotFoundException e){
+            System.out.println("\nEl curso al cual desea registrar al alumno no existe\n");
             e.printStackTrace();
         }
     }
 
-    private Course findCourseById(Integer id) throws StudentNotFoundException {
+    private Course findCourseById(Integer id) throws CourseNotFoundException {
         Course courseFound = null;
         for(Course c:this.courseSet){
             if(Objects.equals(id, c.getId()))
                 courseFound = c;
         }
         if (courseFound == null){
-            throw new StudentNotFoundException("El id ingresado no existe");
+            throw new CourseNotFoundException("El id de curso ingresado no existe");
         }
         return courseFound;
     }
 
-    private Student findStudentById(Integer id) throws CourseNotFoundException {
+    private Student findStudentById(Integer id) throws StudentNotFoundException {
         Student studentFound = null;
         for(Student s:this.studentSet){
             if(Objects.equals(id, s.getId()))
                 studentFound = s;
         }
         if (studentFound == null){
-            throw new CourseNotFoundException("El id ingresado no existe");
+            throw new StudentNotFoundException("El id de estudiante ingresado no existe");
         }
         return studentFound;
     }
