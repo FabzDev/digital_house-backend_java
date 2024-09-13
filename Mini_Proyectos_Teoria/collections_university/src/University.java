@@ -12,14 +12,18 @@ public class University {
         this.name = name;
         this.studentSet = new HashSet<>();
         this.courseSet = new HashSet<>();
+
+        System.out.println("Inaguración universidad " + name + "!");
     }
 
     public void matriculateNewStudent(Integer id, String name){
         this.studentSet.add(new Student(id, name));
+        System.out.println("Se matriculó al nuevo estudiante " + name + ", con el id: " + id);
     }
 
     public void registerNewCourse(Integer id, String name){
         this.courseSet.add(new Course(id, name));
+        System.out.println("Se registro el nuevo curso " + name + ", id asignado: " + id);
     }
 
     public void registerStudentToCourse(Integer idStudent, Integer idCourse){
@@ -28,6 +32,8 @@ public class University {
             Course courseFound = findCourseById(idCourse);
 
             courseFound.addStudent(studentFound);
+
+            System.out.println("Se ha registrado al estudiante " + studentFound.getName() + " al curso: " + courseFound.getName());
 
         } catch (StudentNotFoundException e){
             System.out.println("El estudiante ingresado no existe\n");
