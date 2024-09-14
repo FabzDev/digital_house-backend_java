@@ -1,4 +1,4 @@
-public class ProductTicket {
+public class ProductTicket implements Saleable{
     public String productName;
     public Integer quantity;
     public Double price;
@@ -9,9 +9,8 @@ public class ProductTicket {
         this.price = price;
     }
 
-    public Double calculateTotal(){
+    @Override
+    public Double calculateTotal() {
         return quantity * price;
     }
-
-
 }
