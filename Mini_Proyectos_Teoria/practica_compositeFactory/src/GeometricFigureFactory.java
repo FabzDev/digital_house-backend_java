@@ -2,6 +2,10 @@ import java.util.Objects;
 
 public class GeometricFigureFactory {
     private static GeometricFigureFactory instance;
+    public static final String CIRCLE_CODE = "Circle";
+    public static final String TRIANGLE_CODE = "Triangle";
+    public static final String RECTANGLE_CODE = "Rectangle";
+    public static final String SQUARE_CODE = "Square";
 
     private GeometricFigureFactory(){};
 
@@ -12,22 +16,17 @@ public class GeometricFigureFactory {
         return instance;
     }
 
-    public GeometricFigure createFigure(String figure, Double base, Double height){
+    public GeometricFigure createFigure(String figure) throws GeometricFigureFactoryException {
         switch (figure){
             case "Rectangle":
-                return new Rectangle(base, height);
+                return new Rectangle(10.0, 5.0);
             case "Triangle":
-                return new Triangle(base, height);
+                return new Triangle(10.0, 5.0);
+            case "Circle":
+                return new Circle(10.0);
+            case "Square":
+                return new Rectangle(10.0, 5.0);
         }
-        return null;
+        throw new GeometricFigureFactoryException(figure + " no es una figura valida");
     }
-
-    public GeometricFigure createFigure(String figure, Double measure){
-        if (Objects.equals(figure, "Circle"))
-                return new Circle(measure);
-        if (Objects.equals(figure, "Square"))
-            return new Rectangle(measure, measure);
-        return null;
-    }
-
 }
